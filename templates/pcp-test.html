@@ -4,10 +4,17 @@
         <meta charset="UTF-8">
         <title>PCP Study</title>
         <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-        <!-- Bulma Version 0.9.x -->
         <link rel="stylesheet" href="https://unpkg.com/bulma@1.0.2/css/bulma.min.css">
         <link rel="stylesheet" href="../css/tabs.css">
         <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+        <style>
+            .tab-pane {
+                display: none;
+            }
+            .tab-pane.is-active {
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar is-info">
@@ -38,43 +45,43 @@
 
             <div class="tabs is-boxed is-centered main-menu" id="nav">
                 <ul>
-                    <li data-target="pane-1" id="1" class="is-active">
+                    <li data-target="pane-1" class="is-active">
                         <a>
                             <span class="icon is-small"><i class="fa fa-image"></i></span>
                             <span>Introduction</span>
                         </a>
                     </li>
-                    <li data-target="pane-2" id="2">
+                    <li data-target="pane-2">
                         <a>
                             <span class="icon is-small"><i class="fa fa-image"></i></span>
                             <span>Remember</span>
                         </a>
                     </li>
-                    <li data-target="pane-3" id="3">
+                    <li data-target="pane-3">
                         <a>
                             <span class="icon is-small"><i class="fab fa-empire"></i></span>
                             <span>Understand</span>
                         </a>
                     </li>
-                    <li data-target="pane-4" id="4">
+                    <li data-target="pane-4">
                         <a>
                             <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
                             <span>Analyze</span>
                         </a>
                     </li>
-                    <li data-target="pane-5" id="5">
+                    <li data-target="pane-5">
                         <a>
                             <span class="icon is-small"><i class="fa fa-film"></i></span>
                             <span>Apply</span>
                         </a>
                     </li>
-                    <li data-target="pane-6" id="6">
+                    <li data-target="pane-6">
                         <a>
                             <span class="icon is-small"><i class="fa fa-film"></i></span>
                             <span>Evaluate</span>
                         </a>
                     </li>
-                    <li data-target="pane-7" id="7">
+                    <li data-target="pane-7">
                         <a>
                             <span class="icon is-small"><i class="fa fa-film"></i></span>
                             <span>Create</span>
@@ -86,78 +93,74 @@
             <div class="tab-content">
                 <!-- Introduction Tab -->
                 <div class="tab-pane is-active" id="pane-1">
-                    <!-- <figure>
-                        <img src="https://source.unsplash.com/0_xMuEbpFAQ/400x400" alt="💯" class="cent">
-                    </figure>
-                    <figure>
-                        <img src="https://source.unsplash.com/wPMvPMD9KBI/800x600" alt="💯" class="cent">
-                    </figure> -->
                     <div class="content">
                         <h1>Methodology</h1>
                         <img src="../images/PCP_ML-Study.png" alt="study methodology">
-                        <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+                        <p>This figure shows the Bloom’s taxonomy-based modules (Remember, Understand, Apply, Analyze, Evaluate, and Create) that
+                            the students learned from during this intervention.</p>
                     </div>
                 </div>
 
                 <!-- Remember Tab -->
-                <div class="tab-pane" id="pane-2" style="display: none;">
-                    <p>Content for the Remember tab goes here.</p>
+                <div class="tab-pane" id="pane-2">
+                    <div class="content">
+                    <h1>Remember Module</h1>
+                    <ol>
+                        <li>
+                            <strong>Watch the Video:</strong><br>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/539261609?h=ed6a0c268b" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <strong>Complete the FA Survey:</strong><br>
+                            <a href="../surveys/remember-FA.pdf" target="_blank" >Download the FA Survey</a>
+                        </li>
+                        <li>
+                            <strong>Complete the SA Survey:</strong><br>
+                            <a href="../surveys/remember-SA.pdf" target="_blank"">Download the SA Survey</a>
+                        </li>
+                    </ol>
+                    </div>
                 </div>
+                
 
                 <!-- Understand Tab -->
-                <div class="tab-pane" id="pane-3" style="display: none;">
-                    <div class="columns">
-                        <div class="container">
-                            <div class="columns">
-                                <div class="column">
-                                    <article class="media">
-                                        <div class="media-left">
-                                            <i class="fab fa-github-square fa-4x"></i>
-                                        </div>
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
-                                                    <strong>Dominic Ipsum</strong>
-                                                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="column">
-                                    <article class="media">
-                                        <div class="media-left">
-                                            <i class="fab fa-github-alt fa-4x"></i>
-                                        </div>
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
-                                                    <strong>io Ipsum</strong>
-                                                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tab-pane" id="pane-3">
+                    <p>Content for the Understand tab goes here.</p>
                 </div>
 
                 <!-- Other Tabs -->
-                <div class="tab-pane" id="pane-4" style="display: none;">
+                <div class="tab-pane" id="pane-4">
                     <p>Content for the Analyze tab goes here.</p>
                 </div>
-                <div class="tab-pane" id="pane-5" style="display: none;">
+                <div class="tab-pane" id="pane-5">
                     <p>Content for the Apply tab goes here.</p>
                 </div>
-                <div class="tab-pane" id="pane-6" style="display: none;">
+                <div class="tab-pane" id="pane-6">
                     <p>Content for the Evaluate tab goes here.</p>
                 </div>
-                <div class="tab-pane" id="pane-7" style="display: none;">
+                <div class="tab-pane" id="pane-7">
                     <p>Content for the Create tab goes here.</p>
                 </div>
             </div>
         </section>
+
+        <script>
+            // JavaScript for tab switching
+            const tabs = document.querySelectorAll(".tabs ul li");
+            const tabPanes = document.querySelectorAll(".tab-pane");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", function () {
+                    // Remove active class from all tabs and panes
+                    tabs.forEach((item) => item.classList.remove("is-active"));
+                    tabPanes.forEach((pane) => pane.classList.remove("is-active"));
+
+                    // Add active class to the clicked tab and its pane
+                    this.classList.add("is-active");
+                    const target = this.getAttribute("data-target");
+                    document.getElementById(target).classList.add("is-active");
+                });
+            });
+        </script>
     </body>
 </html>
